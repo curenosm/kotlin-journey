@@ -31,20 +31,19 @@ class Player(val name: String) : DiceRoller {
     // podemos hacer uso de la sintaxis set.
 
     // De manera similar podemos declarar un get personalizado
-    val name = name
+    val name: String = name
         get() = field.toUpperCase()
     
     // Implementacion de la interfaz
-    fun rollDice() = Random.nextInt(0, 6)
+    override fun rollDice() = Random.nextInt(0, 6)
 }
-
 
 // Interfaces
 interface DiceRoller {
     
     // Podemos utilizar una definicion por defecto en caso de que no se dependa
     // del estado de la implementacion de la interfaz.
-    fun rollDice() = Random.nextInt(0, 6)
+    open fun rollDice() = Random.nextInt(0, 6)
 }
 
 // Clases Abstractas
@@ -98,7 +97,3 @@ class ConfusedPlayer(name: String): ActivePlayer(name) {
 
 // Ademas debemos declarar las propiedades como protected para que puedan ser
 // accedidas por las clases hijas.
-
-// DATA CLASSES
-
-// Nos permite ahorrarnos mucho codigo repetitivo
