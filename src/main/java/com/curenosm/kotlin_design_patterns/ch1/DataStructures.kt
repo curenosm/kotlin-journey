@@ -11,7 +11,7 @@ fun main() {
   // Conjuntos
 
   val footballChampions =
-      setOf("France", "Germany", "Spain", "Italy", "Brazil", "France", "Brazil", "Germany")
+    setOf("France", "Germany", "Spain", "Italy", "Brazil", "France", "Brazil", "Germany")
 
   println(footballChampions) // [France, Germany, Spain, Italy, Brazil]
 
@@ -21,11 +21,11 @@ fun main() {
 
   // Mapas
   val movieBatmans =
-      mapOf(
-          "Batman Returns" to "Michael Keaton",
-          "Batman Forever" to "Val Kilmer",
-          "Batman & Robin" to "George Clooney",
-      )
+    mapOf(
+      "Batman Returns" to "Michael Keaton",
+      "Batman Forever" to "Val Kilmer",
+      "Batman & Robin" to "George Clooney",
+    )
   println(movieBatmans["Batman Returns"]) // Michael Keaton
 
   // Verificando existencia en los mapas

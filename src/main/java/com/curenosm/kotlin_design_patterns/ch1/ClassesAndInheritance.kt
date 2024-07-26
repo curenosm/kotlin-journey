@@ -23,11 +23,11 @@ class Player(var name: String) : DiceRoller {
   var score: Int = 0
     set(value) {
       field =
-          if (value >= 0) {
-            value
-          } else {
-            0
-          }
+        if (value >= 0) {
+          value
+        } else {
+          0
+        }
     }
 
   // Si queremos tener algo de lógica adicional para alguna propiedad mutable

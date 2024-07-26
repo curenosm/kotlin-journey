@@ -8,11 +8,11 @@ package com.curenosm.kotlin_design_patterns.ch2
 //   - It's verbose
 
 data class Mail_V1(
-    val to: List<String>,
-    val cc: List<String>, // Carbon copy
-    val title: String,
-    val message: String,
-    val important: Boolean, // Trailing comma Kotlin 1.4+
+  val to: List<String>,
+  val cc: List<String>, // Carbon copy
+  val title: String,
+  val message: String,
+  val important: Boolean, // Trailing comma Kotlin 1.4+
 )
 
 class MailBuilder {
@@ -25,11 +25,11 @@ class MailBuilder {
   // As it is internal it will be visible only in the same module
   class Mail
   internal constructor(
-      val to: List<String>,
-      val cc: List<String>,
-      val title: String?,
-      val message: String?,
-      val important: Boolean
+    val to: List<String>,
+    val cc: List<String>,
+    val title: String?,
+    val message: String?,
+    val important: Boolean,
   )
 
   fun to(to: List<String>): MailBuilder {
@@ -65,12 +65,12 @@ class MailBuilder {
 
 // Fluent Setters
 data class Mail_V2(
-    // Underscore is a convention to indicate that the property is private
-    val to: List<String>,
-    private var _message: String? = null,
-    private var _cc: List<String>? = null,
-    private var _title: String? = null,
-    private var _important: Boolean = false
+  // Underscore is a convention to indicate that the property is private
+  val to: List<String>,
+  private var _message: String? = null,
+  private var _cc: List<String>? = null,
+  private var _title: String? = null,
+  private var _important: Boolean = false,
 ) {
 
   // Returns the reference to an object after applying the action
@@ -84,20 +84,20 @@ data class Mail_V2(
 }
 
 data class Mail_V2_1(
-    val to: List<String>,
-    var message: String? = null,
-    var cc: List<String>? = null,
-    var title: String? = null,
-    var important: Boolean = false
+  val to: List<String>,
+  var message: String? = null,
+  var cc: List<String>? = null,
+  var title: String? = null,
+  var important: Boolean = false,
 )
 
 // Default Arguments
 data class Mail_V3(
-    val to: List<String>,
-    val cc: List<String> = listOf(),
-    val title: String = "",
-    val message: String = "",
-    val important: Boolean = false,
+  val to: List<String>,
+  val cc: List<String> = listOf(),
+  val title: String = "",
+  val message: String = "",
+  val important: Boolean = false,
 )
 
 fun main() {
@@ -111,10 +111,10 @@ fun main() {
 
   // When could ever omit the setters declaration
   val mail2 =
-      Mail_V2_1(listOf("hello@mail.com")).apply {
-        message = "Hello"
-        title = "Apply"
-      }
+    Mail_V2_1(listOf("hello@mail.com")).apply {
+      message = "Hello"
+      title = "Apply"
+    }
   println(mail2)
 
   // Using named arguments so we can skip the cc field

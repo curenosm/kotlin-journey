@@ -5,10 +5,10 @@ package com.curenosm.kotlin_design_patterns.ch2
 // se parecen.
 
 data class User(
-    val name: String,
-    val role: Role,
-    private val permissions: Set<String>,
-    val tasks: List<String>,
+  val name: String,
+  val role: Role,
+  private val permissions: Set<String>,
+  val tasks: List<String>,
 ) {
   fun hasPermission(permission: String) = permission in permissions
 }
@@ -16,7 +16,7 @@ data class User(
 enum class Role {
   ADMIN,
   SUPER_ADMIN,
-  REGULAR_USER
+  REGULAR_USER,
 }
 
 // When creating a new user, we assign it permissions that are

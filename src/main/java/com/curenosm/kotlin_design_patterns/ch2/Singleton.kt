@@ -40,7 +40,7 @@ object NoMoviesList : List<String> {
   override fun listIterator(index: Int) = emptyList<String>().listIterator()
 
   override fun subList(fromIndex: Int, toIndex: Int) =
-      emptyList<String>().subList(fromIndex, toIndex)
+    emptyList<String>().subList(fromIndex, toIndex)
 }
 
 fun main() {

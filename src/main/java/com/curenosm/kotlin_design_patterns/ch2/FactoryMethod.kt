@@ -20,9 +20,9 @@ interface ChessPiece {
 
 // Cada pieza de ajedrez va a ser una data class que implementa nuestra interfaz
 data class Pawn(
-    // Sobreescribimos las propiedades de la interfaz
-    override val file: Char,
-    override val rank: Char
+  // Sobreescribimos las propiedades de la interfaz
+  override val file: Char,
+  override val rank: Char,
 ) : ChessPiece
 
 data class Queen(override val file: Char, override val rank: Char) : ChessPiece

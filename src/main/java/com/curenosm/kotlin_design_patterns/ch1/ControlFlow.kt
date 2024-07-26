@@ -19,9 +19,9 @@ fun getUnixSocketPollingShort(isBsd: Boolean): String = if (isBsd) "kqueue" else
 // En Kotlin, en lugar de switch, tenemos when, por regla general se utilizan
 // cuando tenemos mas de una condiciones a evaluar
 fun archenemy(heroName: String) =
-    when (heroName) {
-      "Batman" -> "Joker"
-      "Superman" -> "Lex Luthor"
-      "Spiderman" -> "Green Goblin"
-      else -> "Unknown"
-    }
+  when (heroName) {
+    "Batman" -> "Joker"
+    "Superman" -> "Lex Luthor"
+    "Spiderman" -> "Green Goblin"
+    else -> "Unknown"
+  }

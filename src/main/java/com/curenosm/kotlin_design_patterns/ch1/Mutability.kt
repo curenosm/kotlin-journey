@@ -11,7 +11,7 @@ fun main() {
 
   // Para llamar otras implementaciones
   val treeMap =
-      TreeMap(mapOf("Practical Pig" to "bricks", "Fifer" to "straw", "Fiddler" to "sticks"))
+    TreeMap(mapOf("Practical Pig" to "bricks", "Fifer" to "straw", "Fiddler" to "sticks"))
 
   // Los nombres de las llaves terminan en orden lexicográfico
   println(treeMap.keys) // [Fiddler, Fifer, Practical Pig]

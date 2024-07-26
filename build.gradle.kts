@@ -4,6 +4,8 @@ plugins {
     application
 }
 
+ktfmt { googleStyle() }
+
 repositories {
     google()
     mavenCentral()
