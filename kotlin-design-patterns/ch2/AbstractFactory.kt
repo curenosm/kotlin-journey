@@ -1,3 +1,4 @@
+package ch2
 // A menudo confundido con el patron Factory Method.
 
 // El patron de diseno Abstract Factory es una fabrica de fabricas.
@@ -40,20 +41,12 @@ fun main() {
     // Un safe cast no va a tronar el programa, pero si el tipo no es el 
     // correcto va a devolver null.
     val port: Int? = portProperty.value as? Int
-
-    if (portProperty is IntProperty) {
-        val portOrNull: Int = portProperty.value as? Int // works!
-        if (portOrNull != null) {
-            val port: Int = portOrNull
-        }
-    }
-
-    /*
+    
     if (port != null) {
         // No estamos reasignando un valor, sino haciendo un shadowing
         val port: Int = port 
     }
-    */
+
 }
 
 // Subclassing

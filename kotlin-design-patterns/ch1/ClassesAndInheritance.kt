@@ -1,3 +1,5 @@
+package ch1
+
 // Para utilizar funciones definidos en otros paquetes
 import kotlin.random.*
 

@@ -1,3 +1,4 @@
+package ch2
 // Factory Method nos permite crear objetos sin necesidad de llamar un
 // constructor
 

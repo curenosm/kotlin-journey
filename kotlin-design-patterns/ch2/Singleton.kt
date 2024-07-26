@@ -1,3 +1,4 @@
+package ch2
 
 // Para el patron Singleton, necesitamos tener una unica instancia de una clase
 // en el sistema y ademas esta instancia deberia ser accesible desde cualquier

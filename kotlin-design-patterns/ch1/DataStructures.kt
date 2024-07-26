@@ -1,3 +1,5 @@
+package ch1
+
 fun main() {
     // Listas
     // Inferencia del tipo de elementos de la lista

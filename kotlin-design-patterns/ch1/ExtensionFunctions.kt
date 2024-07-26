@@ -1,3 +1,5 @@
+package ch1
+
 fun main() {
     // Podemos la funcionalidad de una clase sin heredar de ella mediante 
     // el uso de un prefijo delante del nombre de la funcion como el nombre de

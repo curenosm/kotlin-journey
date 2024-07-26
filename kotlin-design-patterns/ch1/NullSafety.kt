@@ -1,3 +1,5 @@
+package ch1
+
 fun main() {
     // Kotlin checa que no haya nulls en tiempo de compilacion
     // val s: String = null // No compila

@@ -1,3 +1,5 @@
+package ch1
+
 var greeting = "Hello Kotlin"
 println(greeting)
 

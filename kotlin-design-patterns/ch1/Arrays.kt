@@ -1,3 +1,5 @@
+package ch1
+
 fun main(args: Array<String>) {
     // En Kotlin los arreglos de algun tipo en particular se denotan
     val musketeers: Array<String> = arrayOf("Athos", "Porthos", "Aramis")

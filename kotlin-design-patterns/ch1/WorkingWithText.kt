@@ -1,3 +1,5 @@
+package ch1
+
 fun archenemy(heroName: String) = when (heroName) {
     "Batman" -> "Joker"
     "Superman" -> "Lex Luthor"

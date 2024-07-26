@@ -1,3 +1,5 @@
+package ch1
+
 val a = 1000
 val b = 1000
 

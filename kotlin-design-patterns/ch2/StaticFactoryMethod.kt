@@ -1,3 +1,5 @@
+package ch2
+
 // Static Factory Method, popularizado por Joshua Bloch en Effective Java
 
 fun main() {
@@ -18,7 +20,7 @@ fun main() {
 // se declaran dentro de un companion object
 
 
-// Si queremos hacer ue la unica manera de instaciar nuestro objetp sea mediante
+// Si queremos hacer que la unica manera de instaciar nuestro objeto sea mediante
 // el static factory method, podemos hacer privado el constructor
 class Server private constructor(port: Long) {
     init {
