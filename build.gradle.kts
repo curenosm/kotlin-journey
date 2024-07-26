@@ -1,9 +1,11 @@
 plugins {
     kotlin("jvm") version "2.0.0"
+    id("com.ncorti.ktfmt.gradle") version "0.19.0"
     application
 }
 
 repositories {
+    google()
     mavenCentral()
 }
 

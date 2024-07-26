@@ -10,12 +10,13 @@ data class User(
     private val permissions: Set<String>,
     val tasks: List<String>,
 ) {
-    fun hasPermission(permission: String) =
-        permission in permissions
+  fun hasPermission(permission: String) = permission in permissions
 }
 
 enum class Role {
-    ADMIN, SUPER_ADMIN, REGULAR_USER
+  ADMIN,
+  SUPER_ADMIN,
+  REGULAR_USER
 }
 
 // When creating a new user, we assign it permissions that are
@@ -25,22 +26,22 @@ enum class Role {
 val allUsers = mutableListOf<User>()
 
 fun createUser(_name: String, role: Role) {
-    for (u in allUsers) {
-        if (u.role == role) {
-            // The pattern is so common that Kotlin has a built-in
-            // function to copy objects.
+  for (u in allUsers) {
+    if (u.role == role) {
+      // The pattern is so common that Kotlin has a built-in
+      // function to copy objects.
 
-            // Even the private properties will be copied
-            allUsers += u.copy(name=_name)
-            return
-        }
+      // Even the private properties will be copied
+      allUsers += u.copy(name = _name)
+      return
     }
-    // Handle case that no other user with such a role exists
+  }
+  // Handle case that no other user with such a role exists
 }
 
 // To be able to clone it easily
 
 fun main() {
-    println("Creating a new user")
-    println(allUsers)
+  println("Creating a new user")
+  println(allUsers)
 }

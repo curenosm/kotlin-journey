@@ -5,20 +5,20 @@ val b = 1000
 
 fun main() {
 
-    println(a == b) // true
-    println(a.equals(b)) // true
-    // println(a === b) // false // Referential equality
+  println(a == b) // true
+  println(a.equals(b)) // true
+  // println(a === b) // false // Referential equality
 
-    greet(getGreeting())
+  greet(getGreeting())
 }
 
 // Declarar funciones incluso despues de la funcion main
 fun greet(greeting: String) {
-    println(greeting)
+  println(greeting)
 }
 
 fun getGreeting(): String {
-    return "Hello, Kotlin!"
+  return "Hello, Kotlin!"
 }
 
 // Funcion Corta

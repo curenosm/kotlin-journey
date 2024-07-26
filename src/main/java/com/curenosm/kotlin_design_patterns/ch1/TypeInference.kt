@@ -1,6 +1,4 @@
-package com.curenosm.kotlin_design_patterns.ch1.TypeInference
+package com.curenosm.kotlin_design_patterns.ch1
 
-class TypeInference {
-    val greeting = "Hello Kotlin"
-    val greetingExplicitlyTyped: String = "Hello Kotlin"
-}
+val greeting = "Hello Kotlin"
+val greetingExplicitlyTyped: String = "Hello Kotlin"
