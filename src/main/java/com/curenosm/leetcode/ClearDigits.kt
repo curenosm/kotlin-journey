@@ -1,7 +1,5 @@
 package com.curenosm.leetcode
 
-// last
-
 class ClearDigits {
   class Solution {
     fun clearDigits(s: String): String {
